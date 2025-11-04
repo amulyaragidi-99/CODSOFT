@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background: #f9fafc;
+    color: #333;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2b5876;
+    color: white;
+    padding: 15px 20px;
+}
+nav h1 {
+    font-size: 1.5rem;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav li {
+    margin-left: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+#menu-btn {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    color: white;
+}
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.cta-btn {
+    background: white;
+    color: #2b5876;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cta-btn:hover {
+    background: #e5ecff;
+}
+section {
+    text-align: center;
+    padding: 40px 20px;
+}
+footer {
+    background: #2b5876;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+@media (max-width: 700px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #2b5876;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 150px;
+        text-align: right;
+        padding: 10px;
+    }
+    nav ul.show {
+        display: flex;
+    }
+    #menu-btn {
+        display: block;
+    }
+}
